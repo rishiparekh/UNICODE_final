@@ -13,7 +13,7 @@
 
 
     <body>
-            <!--FORM NOT WORKING 
+            
             <form id="edit">
                     
                     <input type="email" id="email" name="email" placeholder="Email" name="email">
@@ -23,12 +23,12 @@
                     <input type="tel" id="number" name="number" placeholder="Phone number" name="number">
                     <br>
                     <br>
-                    <a id="submit">SUBMIT</a>
+                    <button id="submit" onclick="func()">SUBMIT</button>
                     
         
         
                 </form>
-            -->
+            
             
         
         <div id="profile">
@@ -56,11 +56,22 @@
       
 
 
-     <!--JAVA SCRIPT NOT WORKING
+     
     
-     <script src="edit.js"></script>
+     <script >
+     
+     
+        function func()
+        {
+            document.getElementById("email_field").innerHTML = document.getElementById("email").value;
+            document.getElementById("number_field").innerHTML = document.getElementById("number").value;
+        }
+
+        
+
+     </script>
     
-    -->   
+      
    
     
         
