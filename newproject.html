@@ -23,7 +23,7 @@
                     <input type="tel" id="number" name="number" placeholder="Phone number" name="number">
                     <br>
                     <br>
-                    <button id="submit" onclick="func()">SUBMIT</button>
+                    <button id="submit" onclick="return func()">SUBMIT</button>
                     
         
         
@@ -65,6 +65,7 @@
         {
             document.getElementById("email_field").innerHTML = document.getElementById("email").value;
             document.getElementById("number_field").innerHTML = document.getElementById("number").value;
+            return false;
         }
 
         
